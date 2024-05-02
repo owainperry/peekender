@@ -1,12 +1,12 @@
 <?php
-	$name = $_POST['name'];
-	$email = $_POST['email'];
-	$recipient = 'peekender.info@gmail.com';
-	$sender = $recipient;
-	$subject = 'Peek News Sunscribe request';
-	$body .= "Name: ".$_REQUEST['name']." \n";
-	$body .= "Email: ".$_REQUEST['email']." \n";	
-	$location = "connect_success.html";
-	mail( $recipient, $subject, $body, "From: $sender" ) or die ("Mail could not be sent.");	
-	header( "Location: $location" );
+    $name = htmlspecialchars($_POST['name']);
+    $email = htmlspecialchars($_POST['email']);
+    $recipient = 'peekender.info@gmail.com';
+    $sender = $recipient;
+    $subject = 'Peek News Subscribe request';
+    $body .= "Name: $name \n";
+    $body .= "Email: $email \n";  
+    $location = "connect_success.html";
+    mail($recipient, $subject, $body, "From: $sender") or die ("Mail could not be sent.");    
+    header("Location: $location");
 ?>
