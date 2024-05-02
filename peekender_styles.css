@@ -1,0 +1,283 @@
+/* Peekender CSS Styles */
+body {
+	font-family: Arial, sans-serif;
+	background-color: #03f4fc;
+	color: #000;
+	margin: 0px;
+	padding-top: 200px;
+	font-size: 12px;
+}
+
+@media screen and (min-width: 600px) {
+	body {
+		padding-top: 120px;
+		font-size: 16px;
+	}
+}
+
+.header-container {
+	background-color: #03f4fc;
+	background-image: linear-gradient(#270394, #03f4fc);
+	color: #fff;
+	text-align: center;
+	width: 100%;
+	display: flex;
+	position: fixed;
+	top: 0;
+	left: 0;
+		  
+}
+
+.padding-container {
+	overflow: hidden;
+	width: 100%;
+	text-align: center;
+}
+
+.header-navbar {
+	display: flex;
+	width: 100%;
+	text-align: center;
+}
+
+.header-navbar span {
+	font-size: 35px;
+	color: white;
+	cursor: pointer;
+	padding: 10px;
+}
+
+.header-logo-container {
+	width: 100%;
+	vertical-align: center;
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	align-items: center;
+	cursor: pointer;
+}
+
+.logo {
+	width: 90%;
+}
+
+.logo-peekender {
+	max-width: 258px;
+}
+
+.logo-smiley {
+	width: 10%;
+	margin-right: 20px;
+}
+
+.logo-familyfayre {
+	/* border: 10px solid blue;  */
+	max-width: 291px;
+}
+
+@media screen and (min-width: 600px) {
+	.header-logo-container {
+		flex-direction: row;
+		align-items: space between;
+		justify-content: center;
+	}
+	.logo {
+		/* border: 10px solid red;  */
+		width: initial;
+		max-width: initial;
+		max-height: 80px;
+		overflow: hidden;
+	}
+	.logo-peekender {
+		/*  border: 10px solid green; */
+	}
+	.logo-smiley {
+		/* border: 10px solid orange;  */
+		max-height: 40px;
+		margin: 0 40px;
+	}
+}
+
+.sidenav {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: #04d61d;
+	overflow-x: hidden;
+	padding-top: 15px;
+	transition: 0.5s;
+}
+
+.sidenav a {
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 18px;
+	color: white;
+	display: block;
+	transition: 0.3s;
+	text-align: left;
+}
+
+.sidenav a:hover {
+	color: #cb42f5;
+}
+
+.sidenav .closebtn {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
+}
+
+@media screen and (min-width: 600px) {
+	.sidenav {padding-top: 60px;}
+	.sidenav a {font-size: 25px;}
+}
+
+.middle-grid-container {
+	display: grid;
+	grid-template-columns: 5% auto 5%;
+	grid-template-rows: auto auto auto auto;
+	gap: 5px;
+	background-color: #03f4fc;
+	padding: 10px;
+	text-align: center;
+}
+
+.grid-side {
+}
+
+.grid-date {
+}
+
+.grid-date img {
+	width: 50%;
+	max-height: 42px;
+	min-height: 25px;
+	max-width: 460px;
+	min-width: 190px;
+}
+
+.grid-text1 {
+}
+
+#line-up, #location, #info, #connect {
+	text-align: left;
+}
+
+@media screen and (min-width: 600px) {
+	#line-up, #location, #info {
+		padding-left: 140px;
+		padding-right: 140px;
+	}
+}
+
+
+.grid-page-logo {
+}
+
+.grid-page-logo img {
+	width: 40%;
+	padding: 20px;
+}
+
+#front-page-smiley {
+	max-width: 350px;
+}
+
+.grid-bottom {
+	height: 100px;
+}
+
+@media screen and (min-width: 600px) {
+	.middle-grid-container {
+		grid-template-columns: 10% auto 10%;
+	}
+}
+
+table, th, td {
+	border: 1px solid white;
+	border-collapse: collapse;
+	text-align: left;
+	padding: 5px;
+	font-size: 12px;
+	width: 100%;
+}
+th, td {
+	background-color: #96D4D4;
+	width: 33%;
+}
+
+@media screen and (min-width: 600px) {
+	table, th, td {
+		font-size: 14px;
+	}
+}
+
+.footer-container {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	overflow: hidden;
+	padding: 0;
+	margin: 0;
+}
+
+.footer-container img {
+	min-width: 300px;
+	max-width: 548px;
+}
+
+.colour-container {
+  border: 5px solid #fcba03;
+  border-radius: 20px; 
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+
+}
+
+#pink {
+	background-color: #ce03fc;
+	border: 5px solid #ce03fc;
+	text-align: left;
+	vertical-align: center;
+	padding: 20px;
+ }
+
+.email-container {
+  padding: 20px;
+  background-color: #fcba03;
+}
+
+input[type=text], input[type=submit] {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 2px solid #ccc;
+  border-radius: 20px; 
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+ background:#223445;
+ font-size: 12px;
+ color:#FFFFFF ;
+ padding: 0;
+ border: 1px solid #223445;
+ width: 15em;
+ height: 4em;
+ -webkit-font-smoothing: antialiased;
+}
+
+input[type=submit]:hover {
+  opacity: 0.8;
+}
