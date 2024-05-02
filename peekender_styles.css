@@ -234,23 +234,29 @@ th, td {
 	max-width: 548px;
 }
 
-.colour-container {
-  border: 5px solid #fcba03;
-  border-radius: 20px; 
-  -moz-border-radius: 20px;
-  -webkit-border-radius: 20px;
-
+.rounded-colour-container {
+	display: flex;
+	align-items: center;
+	text-align: left;
+	border: 5px solid;
+	border-radius: 20px; 
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
 }
 
 #pink {
 	background-color: #ce03fc;
 	border: 5px solid #ce03fc;
-	text-align: left;
-	vertical-align: center;
 	padding: 20px;
  }
-
-.email-container {
+ 
+#gold {
+	background-color: #fcba03;
+	border: 5px solid #fcba03;
+	padding: 20px;
+ }
+ 
+ .email-container {
   padding: 20px;
   background-color: #fcba03;
 }
