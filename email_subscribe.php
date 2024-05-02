@@ -1,5 +1,4 @@
 <?php
-if (isset($_POST['submit'])) { 
 	$name = $_POST['name'];
 	$email = $_POST['email'];
 	$recipient = 'peekender.info@gmail.com';
@@ -10,5 +9,4 @@ if (isset($_POST['submit'])) {
 	$location = "connect_success.html";
 	mail( $recipient, $subject, $body, "From: $sender" ) or die ("Mail could not be sent.");	
 	header( "Location: $location" );
-}
 ?>
