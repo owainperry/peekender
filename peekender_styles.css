@@ -157,9 +157,9 @@ body {
 .grid-date img {
 	width: 50%;
 	max-height: 42px;
-	min-height: 25px;
+	min-height: 30px;
 	max-width: 460px;
-	min-width: 190px;
+	min-width: 230px;
 }
 
 .grid-text1 {
@@ -183,6 +183,7 @@ body {
 .grid-page-logo img {
 	width: 40%;
 	padding: 20px;
+	min-width: 250px;
 }
 
 #front-page-smiley {
@@ -242,18 +243,67 @@ th, td {
 	border-radius: 20px; 
 	-moz-border-radius: 20px;
 	-webkit-border-radius: 20px;
+	overflow:hidden;
+	margin: 4px;
 }
 
 #pink {
 	background-color: #ce03fc;
 	border: 5px solid #ce03fc;
 	padding: 20px;
- }
+}
  
 #gold {
 	background-color: #fcba03;
 	border: 5px solid #fcba03;
 	padding: 20px;
+}
+ 
+#maggies-pink {
+	background-color: #e10073;
+	border: 5px solid #e10073;
+	color: white;
+}
+
+#sickle-green {
+	background-color: #00592a;
+	border: 5px solid #00592a;
+	color: white;
+}
+ 
+#epilepsy-green {
+	background-color: #6bf502;
+	border: 5px solid #6bf502;
+	color: black;
+}
+
+#drag-blue {
+	background-color: #021ff5;
+	border: 5px solid #021ff5;
+	color: white;
+}
+ 
+ .charity {
+	display: flex;
+	flex-flow: column;
+	align-items: top;
+	text-align: center;
+	padding: 5px;
+ }
+ 
+ @media screen and (min-width: 600px) {
+	.charity {
+		flex-flow: row;
+	}
+}
+ 
+ .charity img {
+	width: 100px;
+ }
+ 
+ .charity p {
+	 font-style: bold;
+	 text-align: left;
  }
  
  .email-container {
