@@ -1,65 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="ISO-8859-1">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Peekender Festival</title>
-        <link rel="stylesheet" href="peekender_styles.css">
-	</head>
-    <body>
-        <header class="header-container">
-            <div class="header-navbar">
-                <span onclick="openNav()">&#9776;</span>
-                <div class="header-logo-container" onclick="location.href='index.html';">
-                    <img class="logo logo-peekender" src="peekender_images/peekender_logo_1.png"/>
-                    <img class="logo logo-smiley" src="peekender_images/smiley.png"/>
-                    <img class="logo logo-familyfayre" src="peekender_images/family_fayre_logo_1.png"/>
-                </div>
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-91H3K16N31"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-91H3K16N31');
+    </script>
+    <meta charset="ISO-8859-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peekender Festival</title>
+    <link rel="stylesheet" href="peekender_styles.css">
+</head>
+
+<body>
+    <header class="header-container">
+        <div class="header-navbar">
+            <span onclick="openNav()">&#9776;</span>
+            <div class="header-logo-container" onclick="location.href='index.html';">
+                <img class="logo logo-peekender" src="peekender_images/peekender_logo_1.png" />
+                <img class="logo logo-smiley" src="peekender_images/smiley.png" />
+                <img class="logo logo-familyfayre" src="peekender_images/family_fayre_logo_1.png" />
             </div>
-        </header>
-        <section class="middle-grid-container">
-            <div class="grid-side"></div>  
-            <div class="grid-date"><img src="peekender_images/peekender_date.png" /></div>
-            <div class="grid-side"></div>  
-            <div class="grid-side"></div>  
-            <div class="grid-page-logo"><img src="peekender_images/thanks.png" /></div>
-            <div class="grid-side"></div>  
-            <div class="grid-side"></div>  
-            <div class="grid-text1">
-				<h2>Shout Outs, Big Ups and Pats From The Back</h2>
-				<p><b>Lee</b> - For joining forces with us and sourcing the land and infrastructure.</P>
-				<p><b>Tony Sigly, Sick Pup Art</b> - For providing his time, effort and amazing art over the years.</P>
-				<p><b>Dave Andrews</b> - For help with CSS</p>
-				<p><b>Prav</b> - For his help with kit and decor.</p>
-				<p><b>You, the Peek Crew</b> - For being there with us all this time.</p>
-            </div>
-            <div class="grid-side"></div>  
-            <div class="grid-side"></div>
-            <div class="grid-bottom"></div>  
-            <div class="grid-side"></div>  
-        </section>
-        <footer class="footer-container">
-			<img src="peekender_images/peek_people_30.png" style="width: 40%;" />
-        </footer>
-        <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="index.html">About</a>
-            <a href="tickets.html">Tickets</a>
-            <a href="location.html">Location</a>
-            <a href="info.html">Info</a>
-            <a href="charities.html">Charities</a>
-            <a href="line_up.html">Line-up</a>
-            <a href="news.html">News</a>
-            <a href="connect.html">Connect</a>
-            <a href="shouts.html">Thanks</a>
         </div>
-        <script>
-  			function openNav() {
-  				document.getElementById("mySidenav").style.width = "250px";
-  			}
-  			function closeNav() {
-  				document.getElementById("mySidenav").style.width = "0";
-  			}
-        </script>
-    </body>
+    </header>
+    <section class="middle-grid-container">
+        <div class="grid-side"></div>
+        <div class="grid-date"><img src="peekender_images/peekender_date.png" /></div>
+        <div class="grid-side"></div>
+        <div class="grid-side"></div>
+        <div class="grid-page-logo"><img src="peekender_images/thanks.png" /></div>
+        <div class="grid-side"></div>
+        <div class="grid-side"></div>
+        <div class="grid-text1">
+            <h2>Shout Outs, Big Ups and Pats From The Back</h2>
+            <p><b>Lee</b> - For joining forces with us and sourcing the land and infrastructure.</P>
+            <p><b>Tony Sigly, Sick Pup Art</b> - For providing his time, effort and amazing art over the years.</P>
+            <p><b>Dave Andrews</b> - For help with CSS</p>
+            <p><b>Prav</b> - For his help with kit and decor.</p>
+            <p><b>You, the Peek Crew</b> - For being there with us all this time.</p>
+        </div>
+        <div class="grid-side"></div>
+        <div class="grid-side"></div>
+        <div class="grid-bottom"></div>
+        <div class="grid-side"></div>
+    </section>
+    <footer class="footer-container">
+        <img src="peekender_images/peek_people_30.png" style="width: 40%;" />
+    </footer>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">About</a>
+        <a href="tickets.html">Tickets</a>
+        <a href="location.html">Location</a>
+        <a href="info.html">Info</a>
+        <a href="charities.html">Charities</a>
+        <a href="line_up.html">Line-up</a>
+        <a href="news.html">News</a>
+        <a href="connect.html">Connect</a>
+        <a href="shouts.html">Thanks</a>
+    </div>
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+</body>
+
 </html>

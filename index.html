@@ -1,75 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="ISO-8859-1">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Peekender Festival</title>
-        <link rel="stylesheet" href="peekender_styles.css">
-	</head>
-    <body>
-        <header class="header-container">
-            <div class="header-navbar">
-                <span onclick="openNav()">&#9776;</span>
-                <div class="header-logo-container" onclick="location.href='index.html';">
-                    <img class="logo logo-peekender" src="peekender_images/peekender_logo_1.png"/>
-                    <img class="logo logo-smiley" src="peekender_images/smiley.png"/>
-                    <img class="logo logo-familyfayre" src="peekender_images/family_fayre_logo_1.png"/>
-                </div>
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-91H3K16N31"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-91H3K16N31');
+    </script>
+    <meta charset="ISO-8859-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peekender Festival</title>
+    <link rel="stylesheet" href="peekender_styles.css">
+</head>
+
+<body>
+    <header class="header-container">
+        <div class="header-navbar">
+            <span onclick="openNav()">&#9776;</span>
+            <div class="header-logo-container" onclick="location.href='index.html';">
+                <img class="logo logo-peekender" src="peekender_images/peekender_logo_1.png" />
+                <img class="logo logo-smiley" src="peekender_images/smiley.png" />
+                <img class="logo logo-familyfayre" src="peekender_images/family_fayre_logo_1.png" />
             </div>
-        </header>
-        <section class="middle-grid-container">
-            <div class="grid-side"></div>  
-            <div class="grid-date"><img src="peekender_images/peekender_date.png" /></div>
-            <div class="grid-side"></div>  
-            <div class="grid-side"></div>  
-            <div class="grid-page-logo"><img id="front-page-smiley" src="peekender_images/peekender_smily_1.png" /></div>
-            <div class="grid-side"></div>  
-            <div class="grid-side"></div>  
-            <div class="grid-text1">
-                <h3>Welcome Welcome welcome to</h3>
-                <h3>Peek's 30th Birthday</h3>
-                <h3>and</h3>
-                <h3>Lee's Charity Fundraiser</h3>
-                <h3>The Family Fayre</h3>
-                <p>Come join us for an awesome weekend of tunes, friends, fun and camping in the beautiful Wiltshire countryside under the gaze of the Westbury White Horse</p>
-                <br>
-                <p>We've joined forces to bring you two marquees of music, a bar, a food outlet and camping.</p>
-                <br>
-                <p>Celebrating 30 years of Techno, Trance and Acid, Peek are taking over Saturday through to Sunday morning</p>
-                <br>
-                <p>Introducing the first of Lee's annual Charity Fundraising mini-festivals</p>
-                <p>A big portion of the ticket price will go to one of four Charities chosen by Lee and Peek.</p>
-                <br>
-                <p>Bring a tent, campervan, caravan or just don't sleep at all</p>
-				<p>(who are we kidding, this isn't 1994!!)</p>
-            </div>
-            <div class="grid-side"></div>  
-			<div class="grid-side"></div>
-            <div class="grid-bottom"></div>  
-            <div class="grid-side"></div>  
-        </section>
-        <footer class="footer-container">
-			<img src="peekender_images/peek_people_30.png" style="width: 40%;" />
-        </footer>
-        <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="index.html">About</a>
-            <a href="tickets.html">Tickets</a>
-            <a href="location.html">Location</a>
-            <a href="info.html">Info</a>
-            <a href="charities.html">Charities</a>
-            <a href="line_up.html">Line-up</a>
-            <a href="news.html">News</a>
-            <a href="connect.html">Connect</a>
-            <a href="shouts.html">Thanks</a>
         </div>
-        <script>
-  			function openNav() {
-  				document.getElementById("mySidenav").style.width = "250px";
-  			}
-  			function closeNav() {
-  				document.getElementById("mySidenav").style.width = "0";
-  			}
-        </script>
-    </body>
+    </header>
+    <section class="middle-grid-container">
+        <div class="grid-side"></div>
+        <div class="grid-date"><img src="peekender_images/peekender_date.png" /></div>
+        <div class="grid-side"></div>
+        <div class="grid-side"></div>
+        <div class="grid-page-logo"><img id="front-page-smiley" src="peekender_images/peekender_smily_1.png" /></div>
+        <div class="grid-side"></div>
+        <div class="grid-side"></div>
+        <div class="grid-text1">
+            <h3>Welcome Welcome welcome to</h3>
+            <h3>Peek's 30th Birthday</h3>
+            <h3>and</h3>
+            <h3>Lee's Charity Fundraiser</h3>
+            <h3>The Family Fayre</h3>
+            <p>Come join us for an awesome weekend of tunes, friends, fun and camping in the beautiful Wiltshire
+                countryside under the gaze of the Westbury White Horse</p>
+            <br>
+            <p>We've joined forces to bring you two marquees of music, a bar, a food outlet and camping.</p>
+            <br>
+            <p>Celebrating 30 years of Techno, Trance and Acid, Peek are taking over Saturday through to Sunday morning
+            </p>
+            <br>
+            <p>Introducing the first of Lee's annual Charity Fundraising mini-festivals</p>
+            <p>A big portion of the ticket price will go to one of four Charities chosen by Lee and Peek.</p>
+            <br>
+            <p>Bring a tent, campervan, caravan or just don't sleep at all</p>
+            <p>(who are we kidding, this isn't 1994!!)</p>
+        </div>
+        <div class="grid-side"></div>
+        <div class="grid-side"></div>
+        <div class="grid-bottom"></div>
+        <div class="grid-side"></div>
+    </section>
+    <footer class="footer-container">
+        <img src="peekender_images/peek_people_30.png" style="width: 40%;" />
+    </footer>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">About</a>
+        <a href="tickets.html">Tickets</a>
+        <a href="location.html">Location</a>
+        <a href="info.html">Info</a>
+        <a href="charities.html">Charities</a>
+        <a href="line_up.html">Line-up</a>
+        <a href="news.html">News</a>
+        <a href="connect.html">Connect</a>
+        <a href="shouts.html">Thanks</a>
+    </div>
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+</body>
+
 </html>
