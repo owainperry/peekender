@@ -1,48 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-91H3K16N31"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-91H3K16N31');
-    </script>
-    <meta charset="ISO-8859-1">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Peekender Connect</title>
-    <link rel="stylesheet" href="peekender_styles.css">
-</head>
-
-<body>
-    <header class="header-container">
-        <div class="header-navbar">
-            <span onclick="openNav()">&#9776;</span>
-            <div class="header-logo-container" onclick="location.href='index.html';">
-                <img class="logo logo-peekender" src="peekender_images/peekender_logo_1.png" />
-                <img class="logo logo-smiley" src="peekender_images/smiley.png" />
-                <img class="logo logo-familyfayre" src="peekender_images/family_fayre_logo_1.png" />
+	<head>
+		<meta charset="ISO-8859-1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Peekender Festival</title>
+        <link rel="stylesheet" href="peekender_styles.css">
+	</head>
+    <body>
+        <header class="header-container">
+            <div class="header-navbar">
+                <span onclick="openNav()">&#9776;</span>
+                <div class="header-logo-container" onclick="location.href='index.html';">
+                    <img class="logo logo-peekender" src="peekender_images/peekender_logo_1.png"/>
+                    <img class="logo logo-smiley" src="peekender_images/smiley.png"/>
+                    <img class="logo logo-familyfayre" src="peekender_images/family_fayre_logo_1.png"/>
+                </div>
             </div>
-        </div>
-    </header>
-    <section class="middle-grid-container">
-        <div class="grid-side"></div>
-        <div class="grid-date"><img src="peekender_images/peekender_date.png" /></div>
-        <div class="grid-side"></div>
-        <div class="grid-side"></div>
-        <div class="grid-page-logo"><img src="peekender_images/connect.png" /></div>
-        <div class="grid-side"></div>
-        <div class="grid-side"></div>
-        <div class="grid-text1" id="connect">
-            <div class="rounded-colour-container" id="pink">
-                <b>Connect with us via the Facebook event page</b><a
-                    href="https://www.facebook.com/events/1175036356852072"><img src="peekender_images/facebook.png"
-                        style="width: 25px;padding-left: 40px;" /></a>
-            </div>
-            <!--				<form class="colour-container" method="POST" action="email_subscribe.php">
+        </header>
+        <section class="middle-grid-container">
+            <div class="grid-side"></div>  
+            <div class="grid-date"><img src="peekender_images/peekender_date.png" /></div>
+            <div class="grid-side"></div>  
+            <div class="grid-side"></div>  
+            <div class="grid-page-logo"><img src="peekender_images/connect.png" /></div>
+            <div class="grid-side"></div>  
+            <div class="grid-side"></div>  
+            <div class="grid-text1" id="connect">
+				<div class="rounded-colour-container" id="pink">
+					<b>Connect with us via the Facebook event page</b><a href="https://www.facebook.com/events/1175036356852072"><img src="peekender_images/facebook.png" style="width: 25px;padding-left: 40px;" /></a>
+				</div>
+				<form class="colour-container" method="POST" action="email_subscribe.php">
 					<div class="email-container">
 						<b>Subscribe to our news emails</b>
 						<p>We'll email news updates about Peek and the weekender</p>
@@ -54,39 +41,38 @@
 					<div class="email-container">
 						<input type="submit" value="Subscribe">
 					</div>
-				</form>-->
-            <div class="rounded-colour-container" id="gold">
-                <b>Email subscription is coming to a screen near you very very soon, hold your hats.</b>
+				</form>
+<!--				<div class="rounded-colour-container" id="gold">
+					<b>Email subscription is coming to a screen near you very very soon, hold your hats.</b>
+				</div>-->
             </div>
+            <div class="grid-side"></div>  
+            <div class="grid-side"></div>
+            <div class="grid-bottom"></div>  
+            <div class="grid-side"></div>  
+        </section>
+        <footer class="footer-container">
+			<img src="peekender_images/peek_people_30.png" style="width: 40%;" />
+        </footer>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">About</a>
+            <a href="tickets.html">Tickets</a>
+            <a href="location.html">Location</a>
+            <a href="info.html">Info</a>
+            <a href="charities.html">Charities</a>
+            <a href="line_up.html">Line-up</a>
+            <a href="news.html">News</a>
+            <a href="connect.html">Connect</a>
+            <a href="shouts.html">Thanks</a>
         </div>
-        <div class="grid-side"></div>
-        <div class="grid-side"></div>
-        <div class="grid-bottom"></div>
-        <div class="grid-side"></div>
-    </section>
-    <footer class="footer-container">
-        <img src="peekender_images/peek_people_30.png" style="width: 40%;" />
-    </footer>
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="index.html">About</a>
-        <a href="tickets.html">Tickets</a>
-        <a href="location.html">Location</a>
-        <a href="info.html">Info</a>
-        <a href="charities.html">Charities</a>
-        <a href="line_up.html">Line-up</a>
-        <a href="news.html">News</a>
-        <a href="connect.html">Connect</a>
-        <a href="shouts.html">Thanks</a>
-    </div>
-    <script>
-        function openNav() {
-            document.getElementById("mySidenav").style.width = "250px";
-        }
-        function closeNav() {
-            document.getElementById("mySidenav").style.width = "0";
-        }
-    </script>
-</body>
-
+        <script>
+  			function openNav() {
+  				document.getElementById("mySidenav").style.width = "250px";
+  			}
+  			function closeNav() {
+  				document.getElementById("mySidenav").style.width = "0";
+  			}
+        </script>
+    </body>
 </html>
