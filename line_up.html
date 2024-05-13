@@ -1,91 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-91H3K16N31"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-91H3K16N31');
-    </script>
-    <meta charset="ISO-8859-1">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Peekender Lineup</title>
-    <link rel="stylesheet" href="peekender_styles.css">
-</head>
-
-<body>
-    <header class="header-container">
-        <div class="header-navbar">
-            <span onclick="openNav()">&#9776;</span>
-            <div class="header-logo-container" onclick="location.href='index.html';">
-                <img class="logo logo-peekender" src="peekender_images/peekender_logo_1.png" />
-                <img class="logo logo-smiley" src="peekender_images/smiley.png" />
-                <img class="logo logo-familyfayre" src="peekender_images/family_fayre_logo_1.png" />
+	<head>
+		<meta charset="ISO-8859-1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Peekender Festival</title>
+        <link rel="stylesheet" href="peekender_styles.css">
+		<link href='https://fonts.googleapis.com/css?family=Akshar' rel='stylesheet'>
+	</head>
+    <body>
+        <header class="header-container">
+            <div class="header-navbar">
+                <span onclick="openNav()">&#9776;</span>
+                <div class="header-logo-container" onclick="location.href='index.html';">
+                    <img class="logo logo-peekender" src="peekender_images/peekender_logo_1.png"/>
+                    <img class="logo logo-smiley" src="peekender_images/smiley.png"/>
+                    <img class="logo logo-familyfayre" src="peekender_images/family_fayre_logo_1.png"/>
+                </div>
             </div>
+        </header>
+        <section class="middle-grid-container">
+            <div class="grid-side"></div>  
+            <div class="grid-date"><img src="peekender_images/peekender_date.png" /></div>
+            <div class="grid-side"></div>  
+            <div class="grid-side"></div>  
+            <div class="grid-page-logo"><img src="peekender_images/line-up.png" /></div>
+            <div class="grid-side"></div>  
+            <div class="grid-side"></div>  
+            <div class="grid-text1" id="line-up">
+				<h4>The line-up is still being organised and we'll add details here as they come in</h4>
+                <h2>Family Fayre Friday</h2>
+				<p>Dover Sole (Code South)</p>
+				<p>Sam and Jeff - Plasma Wave</p>
+                <p>Andy AT*iT (System AT*iT Sound System)</p>
+                <p>Dan (Co-Existence Sound System)</p>
+                <br>
+                <h2>Peek Saturday - 30th Birthday Take Over</h2>
+                <h4>Zen Masters</h4>
+                <ul>
+                    <li>Steve</li>
+                    <li>Courtney</li>
+                    <li>Lee</li>
+                </ul>                <p></p>
+                <p>Jake Om</p>
+                <p>Alex I Brow</p>
+                <h4>Peek DJ's</h4>
+                <ul>
+                    <li>Andy AT*iT</li>
+                    <li>Freaky Bob b2b Jake Om</li>
+                    <li>Perry</li>
+                    <li>Jon Bradley</li>
+                </ul>
+            </div>
+            <div class="grid-side"></div>  
+            <div class="grid-side"></div>
+            <div class="grid-bottom"></div>  
+            <div class="grid-side"></div>  
+        </section>
+        <footer class="footer-container">
+			<img src="peekender_images/peek_people_30.png" style="width: 40%;" />
+        </footer>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">About</a>
+            <a href="tickets.html">Tickets</a>
+            <a href="location.html">Location</a>
+            <a href="info.html">Info</a>
+            <a href="charities.html">Charities</a>
+            <a href="line_up.html">Line-up</a>
+            <a href="news.html">News</a>
+            <a href="connect.html">Connect</a>
+            <a href="shouts.html">Thanks</a>
         </div>
-    </header>
-    <section class="middle-grid-container">
-        <div class="grid-side"></div>
-        <div class="grid-date"><img src="peekender_images/peekender_date.png" /></div>
-        <div class="grid-side"></div>
-        <div class="grid-side"></div>
-        <div class="grid-page-logo"><img src="peekender_images/line-up.png" /></div>
-        <div class="grid-side"></div>
-        <div class="grid-side"></div>
-        <div class="grid-text1" id="line-up">
-            <h4>The line-up is still being organised and we'll add details here as they come in</h4>
-            <h2>Family Fayre Friday</h2>
-            <p>Dan (Co-Existence Sound System)</p>
-            <br>
-            <h2>Sizzling Saturday - Peek's 30th Celebration Take Over</h2>
-            <p>Zen Masters</p>
-            <ul>
-                <li>Steve</li>
-                <li>Courtney</li>
-                <li>Lee</li>
-            </ul>
-            <p></p>
-            <p>Jake Om</p>
-            <h4>Peek DJ's</h4>
-            <ul>
-                <li>Andy AT*iT</li>
-                <li>Freaky Bob b2b Jake Om</li>
-                <li>Perry</li>
-                <li>Jon Bradley</li>
-            </ul>
-        </div>
-        <div class="grid-side"></div>
-        <div class="grid-side"></div>
-        <div class="grid-bottom"></div>
-        <div class="grid-side"></div>
-    </section>
-    <footer class="footer-container">
-        <img src="peekender_images/peek_people_30.png" style="width: 40%;" />
-    </footer>
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="index.html">About</a>
-        <a href="tickets.html">Tickets</a>
-        <a href="location.html">Location</a>
-        <a href="info.html">Info</a>
-        <a href="charities.html">Charities</a>
-        <a href="line_up.html">Line-up</a>
-        <a href="news.html">News</a>
-        <a href="connect.html">Connect</a>
-        <a href="shouts.html">Thanks</a>
-    </div>
-    <script>
-        function openNav() {
-            document.getElementById("mySidenav").style.width = "250px";
-        }
-        function closeNav() {
-            document.getElementById("mySidenav").style.width = "0";
-        }
-    </script>
-</body>
-
+        <script>
+  			function openNav() {
+  				document.getElementById("mySidenav").style.width = "250px";
+  			}
+  			function closeNav() {
+  				document.getElementById("mySidenav").style.width = "0";
+  			}
+        </script>
+    </body>
 </html>

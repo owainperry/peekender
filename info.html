@@ -1,87 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-91H3K16N31"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-91H3K16N31');
-    </script>
-    <meta charset="ISO-8859-1">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Peekender Info</title>
-    <link rel="stylesheet" href="peekender_styles.css">
-</head>
-
-<body>
-    <header class="header-container">
-        <div class="header-navbar">
-            <span onclick="openNav()">&#9776;</span>
-            <div class="header-logo-container" onclick="location.href='index.html';">
-                <img class="logo logo-peekender" src="peekender_images/peekender_logo_1.png" />
-                <img class="logo logo-smiley" src="peekender_images/smiley.png" />
-                <img class="logo logo-familyfayre" src="peekender_images/family_fayre_logo_1.png" />
+	<head>
+		<meta charset="ISO-8859-1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Peekender Festival</title>
+        <link rel="stylesheet" href="peekender_styles.css">
+	</head>
+    <body>
+        <header class="header-container">
+            <div class="header-navbar">
+                <span onclick="openNav()">&#9776;</span>
+                <div class="header-logo-container" onclick="location.href='index.html';">
+                    <img class="logo logo-peekender" src="peekender_images/peekender_logo_1.png"/>
+                    <img class="logo logo-smiley" src="peekender_images/smiley.png"/>
+                    <img class="logo logo-familyfayre" src="peekender_images/family_fayre_logo_1.png"/>
+                </div>
             </div>
+        </header>
+        <section class="middle-grid-container">
+            <div class="grid-side"></div>  
+            <div class="grid-date"><img src="peekender_images/peekender_date.png" /></div>
+            <div class="grid-side"></div>  
+            <div class="grid-side"></div>  
+            <div class="grid-page-logo"><img src="peekender_images/information.png" /></div>
+            <div class="grid-side"></div>  
+            <div class="grid-side"></div>  
+            <div class="grid-text1" id="info">
+				<h4>
+					<a href="#info-camping">Camping</a>
+					<a href="#info-kids">Kids</a>
+					<a href="#info-fires">Fires</a>
+					<a href="#info-food">Food</a>
+				</h4>
+				<h3 id="info-camping">Camping</h3>
+				<p>There is plenty of space for your tent or a van</p>
+				<h3 id="info-kids">Kids</h3>
+				<p>There will be a separate star marquee for the kids to hang out in, we'll have a projector available in there.</p>
+				<p>We have people who run festival kids fields to help out have lots of fun and things to do.</p>
+				<h3 id="info-fires">Fires</h3>
+				<p>There's no fires on site, however barbeques will be allowed.</p>
+				<h3 id="info-food">Food</h3>
+				<p>We will hopefully have a food outlet van, however cooking together can be so much fun..</p>
+            </div>
+            <div class="grid-side"></div>  
+            <div class="grid-side"></div>
+            <div class="grid-bottom"></div>  
+            <div class="grid-side"></div>  
+        </section>
+        <footer class="footer-container">
+			<img src="peekender_images/peek_people_30.png" style="width: 40%;" />
+        </footer>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">About</a>
+            <a href="tickets.html">Tickets</a>
+            <a href="location.html">Location</a>
+            <a href="info.html">Info</a>
+            <a href="charities.html">Charities</a>
+            <a href="line_up.html">Line-up</a>
+            <a href="news.html">News</a>
+            <a href="connect.html">Connect</a>
+            <a href="shouts.html">Thanks</a>
         </div>
-    </header>
-    <section class="middle-grid-container">
-        <div class="grid-side"></div>
-        <div class="grid-date"><img src="peekender_images/peekender_date.png" /></div>
-        <div class="grid-side"></div>
-        <div class="grid-side"></div>
-        <div class="grid-page-logo"><img src="peekender_images/information.png" /></div>
-        <div class="grid-side"></div>
-        <div class="grid-side"></div>
-        <div class="grid-text1" id="info">
-            <h4>
-                <a href="#info-camping">Camping</a>
-                <a href="#info-kids">Kids</a>
-                <a href="#info-fires">Fires</a>
-                <a href="#info-food">Food</a>
-            </h4>
-            <h3 id="info-camping">Camping</h3>
-            <p>There is plenty of space for your tent or a van</p>
-            <h3 id="info-kids">Kids</h3>
-            <p>There will be a separate star marquee for the kids to hang out in, we'll have a projector available in
-                there.</p>
-            <p>We have people who run festival kids fields to help out have lots of fun and things to do.</p>
-            <h3 id="info-fires">Fires</h3>
-            <p>There's no fires on site, however barbeques will be allowed.</p>
-            <h3 id="info-food">Food</h3>
-            <p>We will hopefully have a food outlet van, however cooking together can be so much fun..</p>
-        </div>
-        <div class="grid-side"></div>
-        <div class="grid-side"></div>
-        <div class="grid-bottom"></div>
-        <div class="grid-side"></div>
-    </section>
-    <footer class="footer-container">
-        <img src="peekender_images/peek_people_30.png" style="width: 40%;" />
-    </footer>
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="index.html">About</a>
-        <a href="tickets.html">Tickets</a>
-        <a href="location.html">Location</a>
-        <a href="info.html">Info</a>
-        <a href="charities.html">Charities</a>
-        <a href="line_up.html">Line-up</a>
-        <a href="news.html">News</a>
-        <a href="connect.html">Connect</a>
-        <a href="shouts.html">Thanks</a>
-    </div>
-    <script>
-        function openNav() {
-            document.getElementById("mySidenav").style.width = "250px";
-        }
-        function closeNav() {
-            document.getElementById("mySidenav").style.width = "0";
-        }
-    </script>
-</body>
-
+       <script>
+  			function openNav() {
+  				document.getElementById("mySidenav").style.width = "250px";
+  			}
+  			function closeNav() {
+  				document.getElementById("mySidenav").style.width = "0";
+  			}
+        </script>
+    </body>
 </html>
