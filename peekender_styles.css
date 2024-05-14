@@ -257,6 +257,11 @@ a:link, a:visited {
   color: inherit;
 }
 
+h3:link, h3:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
 
 #pink {
 	background-color: #ce03fc;
