@@ -1,7 +1,7 @@
 /* Peekender CSS Styles */
 body {
 	font-family: 'Akshar', Arial, sans-serif;
-	background-color: #03f4fc;
+	background-color: #63CFC5;
 	color: #000;
 	margin: 0px;
 	padding-top: 200px;
@@ -20,8 +20,8 @@ p {
 }
 
 .header-container {
-	background-color: #03f4fc;
-	background-image: linear-gradient(#270394, #03f4fc);
+	background-color: #63CFC5;
+	background-image: linear-gradient(#090a38, #63CFC5);
 	color: #fff;
 	text-align: center;
 	width: 100%;
@@ -118,6 +118,7 @@ p {
 .sidenav a {
 	padding: 8px 8px 8px 32px;
 	text-decoration: none;
+	text-shadow: 4px 4px 4px #153618;
 	font-size: 18px;
 	color: white;
 	display: block;
@@ -147,7 +148,7 @@ p {
 	grid-template-columns: 5% auto 5%;
 	grid-template-rows: auto auto auto auto;
 	gap: 5px;
-	background-color: #03f4fc;
+	background-color: #63CFC5;
 	padding: 10px;
 	text-align: center;
 }
