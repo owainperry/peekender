@@ -207,18 +207,6 @@ p {
 	}
 }
 
-table, th, td {
-	border: 1px solid white;
-	border-collapse: collapse;
-	text-align: left;
-	padding: 5px;
-	font-size: 12px;
-	width: 100%;
-}
-th, td {
-	background-color: #96D4D4;
-	width: 33%;
-}
 
 @media screen and (min-width: 892px) {
 	table, th, td {
@@ -258,11 +246,6 @@ th, td {
 a:link, a:visited {
   text-decoration: none;
 }
-
-a:link, a:visited {
-  text-decoration: none;
-}
-
 
 #pink {
 	background-color: #ce03fc;
