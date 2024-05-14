@@ -245,11 +245,16 @@ th, td {
 	align-items: center;
 	text-align: left;
 	border: 5px solid;
-	border-radius: 20px; 
-	-moz-border-radius: 20px;
-	-webkit-border-radius: 20px;
+	border-radius: 15px; 
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
 	overflow:hidden;
 	margin: 4px;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+  color: inherit;
 }
 
 
@@ -262,6 +267,12 @@ th, td {
 #gold {
 	background-color: #fcba03;
 	border: 5px solid #fcba03;
+	padding: 20px;
+}
+
+#green {
+	background-color: #6bf502;
+	border: 5px solid #6bf502;
 	padding: 20px;
 }
  
