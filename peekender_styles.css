@@ -313,41 +313,51 @@ a:link, a:visited {
 	 font-style: bold;
 	 text-align: left;
  }
+ 
+		
 .email-form-container {
 	border: 5px solid;
 	border-radius: 20px;
 }
 	
- .email-container {
-  padding: 20px;
-  background-color: #fcba03;
+.email-container {
+	padding: 20px;
+	background-color: #fcba03;
 }
 
 input[type=text], input[type=submit] {
-  width: 100%;
-  padding: 12px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 2px solid #ccc;
-  border-radius: 20px; 
-  -moz-border-radius: 20px;
-  -webkit-border-radius: 20px;
-  box-sizing: border-box;
+	width: 100%;
+	padding: 12px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 2px solid #ccc;
+	border-radius: 20px; 
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	box-sizing: border-box;
 }
 
 input[type=submit] {
- background:#223445;
- font-size: 12px;
- color:#FFFFFF ;
- padding: 0;
- border: 1px solid #223445;
- width: 15em;
- height: 4em;
- -webkit-font-smoothing: antialiased;
+	background:#223445;
+	font-size: 12px;
+	color:#FFFFFF ;
+	padding: 0;
+	border: 1px solid #223445;
+	width: 15em;
+	height: 4em;
+	cursor: pointer;
+	box-shadow: 0 5px #1a2736;
+	transition: all 0.3s ease;
+	-webkit-font-smoothing: antialiased;
 }
 
 input[type=submit]:hover {
-  opacity: 0.8;
+	opacity: 0.8;
+}
+
+input[type=submit]:active {
+	box-shadow: 0 2px #1a2736;
+	transform: translateY(3px);
 }
 
 audio {
@@ -382,3 +392,4 @@ audio {
 		grid-template-columns: auto auto auto;
 	}
 }
+
