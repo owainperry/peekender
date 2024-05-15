@@ -1,4 +1,6 @@
-<?phpuse PHPMailer\PHPMailer\PHPMailer;
+<?php
+
+use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
 require 'vendor/autoload.php';
@@ -15,7 +17,7 @@ if ($config && isset($config['send_grid'])) {
     $from_name = $config['send_grid']['from_name'];
     $to_email = 'peekender.info@gmail.com';  // Fixed email address
 } else {
-    header('Location: connect_fail.html');
+    header('Location: connect_fail_config.html');
     exit;
 }
 
@@ -26,7 +28,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['subscriber_email']) &&
     $subscriber_name = htmlspecialchars($_POST['subscriber_name'], ENT_QUOTES, 'UTF-8');
 
     if (!filter_var($subscriber_email, FILTER_VALIDATE_EMAIL)) {
-        header('Location: connect_fail.html');
+        header('Location: connect_fail_bademail.html');
         exit;
     }
 
@@ -55,9 +57,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['subscriber_email']) &&
         $mail->send();
         header('Location: connect_success.html');
     } catch (Exception $e) {
-        header('Location: connect_fail.html');
+        header('Location: connect_fail_smtp.html');
     }
 } else {
-    header('Location: connect_fail.html');
+    header('Location: connect_fail_data.html');
 }
 ?>
