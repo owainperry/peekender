@@ -27,11 +27,18 @@ p {
 	color: #fff;
 	text-align: center;
 	width: 100%;
-	display: flex;
+	display: block;
 	position: fixed;
 	top: 0;
 	left: 0;
-		  
+}
+
+.header-banner {
+}
+
+
+.header-nav-logo-container {
+	display: flex;
 }
 
 .padding-container {
