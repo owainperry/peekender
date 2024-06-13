@@ -304,6 +304,20 @@ a:link, a:visited {
 	font-weight: bold;
 }
 
+#lime {
+	background-color: #adfb04;
+	border: 5px solid #adfb04;
+	padding: 20px;
+	color: black;
+}
+
+#cyan {
+	background-color: #3af4e5;
+	border: 5px solid #3af4e5;
+	padding: 20px;
+	color: black;
+}
+
 #pink {
 	background-color: #ce03fc;
 	border: 5px solid #ce03fc;
