@@ -300,7 +300,8 @@ p {
 
 a:link, a:visited {
 	color: inherit;
-	text-decoration: bold;
+	text-decoration: none;
+	font-weight: bold;
 }
 
 #pink {
