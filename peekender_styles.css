@@ -299,7 +299,8 @@ p {
 }
 
 a:link, a:visited {
-  text-decoration: none;
+	color: inherit;
+	text-decoration: none;
 }
 
 #pink {
