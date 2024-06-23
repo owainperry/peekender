@@ -51,6 +51,18 @@
             <div class="grid-date"><img src="peekender_images/peekender_date.png" /></div>
             <div class="grid-side"></div>  
             <div class="grid-side"></div>  
+            <div class="grid-counter">
+				<div class="countdown">
+					<ul>
+						<li><span id="weeks"></span>weeks</li>
+						<li><span id="days"></span>days</li>
+						<li><span id="hours"></span>Hours</li>
+						<li><span id="minutes"></span>Minutes</li>
+					</ul>
+				</div>			
+			</div>
+            <div class="grid-side"></div>  
+            <div class="grid-side"></div>  
             <div class="grid-page-logo"><img src="peekender_images/information.png" /></div>
             <div class="grid-side"></div>  
             <div class="grid-side"></div>  
@@ -101,6 +113,45 @@
   			function closeNav() {
   				document.getElementById("mySidenav").style.width = "0";
   			}
+			(function () {
+				const second = 1000,
+				minute = second * 60,
+				hour = minute * 60,
+				day = hour * 24;
+				week = day * 7;
+
+			let today = new Date(),
+			dd = String(today.getDate()).padStart(2, "0"),
+			mm = String(today.getMonth() + 1).padStart(2, "0"),
+			yyyy = today.getFullYear(),
+			nextYear = yyyy + 1,
+			dayMonth = "08/16/",
+			birthday = dayMonth + yyyy;
+
+			today = mm + "/" + dd + "/" + yyyy;
+			if (today > birthday) {
+			birthday = dayMonth + nextYear;
+			}
+
+			const countDown = new Date(birthday).getTime(),
+			x = setInterval(function() {    
+				const now = new Date().getTime(),
+					distance = countDown - now;
+
+					document.getElementById("weeks").innerText = Math.floor(distance / (week)),
+					document.getElementById("days").innerText = Math.floor((distance % (week)) / (day)),
+					document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
+					document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
+					document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
+
+					if (distance < 0) {
+						document.getElementById("headline").innerText = "It's On! Come down and get a ticket on the door";
+						document.getElementById("countdown").style.display = "none";
+						document.getElementById("content").style.display = "block";
+						clearInterval(x);
+					}
+				}, 0)
+			}());		
         </script>
 		<script async src=https://www.googletagmanager.com/gtag/js?id=G-WE90F4HSWV></script>
 		<script>

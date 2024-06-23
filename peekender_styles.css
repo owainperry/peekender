@@ -469,3 +469,24 @@ audio {
 	}
 }
 
+.countdown li {
+	display: inline-block;
+	font-size: 1.1em;
+	list-style-type: none;
+	padding: 1.2em;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #df810f;
+}
+
+.countdown li span {
+	color: #1d8804;
+	display: block;
+	font-size: 2.5em;
+}
+
+.grid-counter {
+	text-align: center;
+}
+
+
