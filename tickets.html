@@ -64,10 +64,8 @@
             <div class="grid-counter">
 				<div class="countdown">
 					<ul>
-						<li><span id="weeks"></span>weeks</li>
 						<li><span id="days"></span>days</li>
 						<li><span id="hours"></span>Hours</li>
-						<li><span id="minutes"></span>Minutes</li>
 					</ul>
 				</div>			
 			</div>
@@ -83,6 +81,10 @@
 				<a href="https://buytickets.at/peek30/1245092"><div class="rounded-colour-container" id="green">Day Tickets ( 12:00pm to 10:00am )<br>&pound30.00 Adult<br>&pound5.00 Child<br>Day tickets will be available closer to the event</div></a>
                 <br>
                 <p>We're very pleased to say that apart from costs, the ticket price will be spread between 4 charities.</p>
+                <p>Lee is pleased to offer an Older Than Lee discount to anyone older than Lee, get in touch to see if you count!</p>
+                <br>
+				<a href="https://buytickets.at/peek30/1313345"><div class="rounded-colour-container" id="tangerine">Older Than Lee Weekend Discount<br>&pound35.00 Adult</div></a>
+				<br>
                 <p>You can find out more information about which charities from the menu.</p>
                 <br>
                 <p>The ticket price includes the camping and facilities and two marquees of music.</p>
@@ -119,43 +121,31 @@
   			}
 			(function () {
 				const second = 1000,
-				minute = second * 60,
-				hour = minute * 60,
-				day = hour * 24;
-				week = day * 7;
+					  minute = second * 60,
+					  hour = minute * 60,
+					  day = hour * 24;
 
-			let today = new Date(),
-			dd = String(today.getDate()).padStart(2, "0"),
-			mm = String(today.getMonth() + 1).padStart(2, "0"),
-			yyyy = today.getFullYear(),
-			nextYear = yyyy + 1,
-			dayMonth = "08/16/",
-			birthday = dayMonth + yyyy;
+				let today = new Date(),
+					dd = String(today.getDate()).padStart(2, "0"),
+					mm = String(today.getMonth() + 1).padStart(2, "0"),
+					yyyy = today.getFullYear(),
+					birthday = "08/16/2024";
+					today = mm + "/" + dd + "/" + yyyy;
 
-			today = mm + "/" + dd + "/" + yyyy;
-			if (today > birthday) {
-			birthday = dayMonth + nextYear;
-			}
-
-			const countDown = new Date(birthday).getTime(),
-			x = setInterval(function() {    
-				const now = new Date().getTime(),
-					distance = countDown - now;
-
-					document.getElementById("weeks").innerText = Math.floor(distance / (week)),
-					document.getElementById("days").innerText = Math.floor((distance % (week)) / (day)),
-					document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
-					document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
-					document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
-
-					if (distance < 0) {
-						document.getElementById("headline").innerText = "It's On! Come down and get a ticket on the door";
-						document.getElementById("countdown").style.display = "none";
-						document.getElementById("content").style.display = "block";
-						clearInterval(x);
-					}
-				}, 0)
-			}());		
+				const countDown = new Date(birthday).getTime(),
+					  x = setInterval(function() {    
+						  const now = new Date().getTime(),
+								distance = countDown - now;
+								document.getElementById("days").innerText = Math.floor(distance / day),
+								document.getElementById("hours").innerText = Math.floor((distance % day) / hour);
+								if (distance < 0) {
+									document.getElementById("headline").innerText = "It's On! Come down and get a ticket on the door";
+									document.getElementById("countdown").style.display = "none";
+									document.getElementById("content").style.display = "block";
+									clearInterval(x);
+								}
+					  }, 0);
+			}());
         </script>
 		<script async src=https://www.googletagmanager.com/gtag/js?id=G-WE90F4HSWV></script>
 		<script>

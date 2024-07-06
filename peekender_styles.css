@@ -1,7 +1,7 @@
 /* Peekender CSS Styles */
 body {
 	font-family: 'Archivo', Arial, sans-serif;
-	background-color: #63CFC5;
+	background-color: #3cfbfd;
 	color: #000;
 	margin: 0px;
 	padding: 0;
@@ -22,8 +22,8 @@ p {
 }
 
 .header-container {
-	background-color: #63CFC5;
-	background-image: linear-gradient(#3d3fa5, #63CFC5);
+	background-color: #3cfbfd;
+	background-image: linear-gradient(#030cc2, #3cfbfd);
 	color: #fff;
 	text-align: center;
 	width: 100%;
@@ -50,8 +50,8 @@ p {
 }
 .ticker {
   display: inline-block;
-  margin-top: 5px;
-  margin-bottom: 5px;
+  margin-top: 8px;
+  margin-bottom: 8px;
   animation: marquee 20s linear infinite;
   cursor: pointer;
 }
@@ -170,7 +170,7 @@ p {
 .sidenav a {
 	padding: 8px 8px 8px 32px;
 	text-decoration: none;
-	text-shadow: 4px 4px 4px #153618;
+/*	text-shadow: 3px 3px 3px #153618; */
 	font-size: 18px;
 	color: white;
 	display: block;
@@ -179,7 +179,7 @@ p {
 }
 
 .sidenav a:hover {
-	color: #cb42f5;
+	color: #f1fa09;
 }
 
 .sidenav .closebtn {
@@ -200,7 +200,7 @@ p {
 	grid-template-columns: 5% auto 5%;
 	grid-template-rows: auto auto auto auto;
 	gap: 5px;
-	background-color: #63CFC5;
+	background-color: #3cfbfd;
 	padding: 10px;
 	text-align: center;
 	padding-top: 40px;
@@ -307,6 +307,13 @@ a:link, a:visited {
 #tangerine {
 	background-color: #ff4400;
 	border: 5px solid #ff4400;
+	padding: 20px;
+	color: white;
+}
+
+#bloo {
+	background-color: #0612fd;
+	border: 5px solid #0612fd;
 	padding: 20px;
 	color: white;
 }
@@ -469,11 +476,15 @@ audio {
 	}
 }
 
+.countdown ul {
+	padding: 0;
+}
+
 .countdown li {
 	display: inline-block;
-	font-size: 1.1em;
+	font-size: 0.9em;
 	list-style-type: none;
-	padding: 1.2em;
+	padding: 0.5em;
 	text-transform: uppercase;
 	font-weight: bold;
 	color: #df810f;
@@ -482,7 +493,7 @@ audio {
 .countdown li span {
 	color: #1d8804;
 	display: block;
-	font-size: 2.5em;
+	font-size: 2.1em;
 }
 
 .grid-counter {
