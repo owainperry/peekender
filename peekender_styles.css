@@ -304,6 +304,19 @@ a:link, a:visited {
 	font-weight: bold;
 }
 
+.location iframe {
+	border-radius: 15px;
+	border: 5px solid #ff4400;
+	width: 300px; height: 300px;
+}
+
+ @media screen and (min-width: 892px) {
+	.location iframe {
+		width: 75%;
+		height: 400px;
+	}
+ }
+
 #tangerine {
 	background-color: #ff4400;
 	border: 5px solid #ff4400;
