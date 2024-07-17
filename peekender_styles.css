@@ -334,7 +334,12 @@ a:link, a:visited {
 	padding: 20px;
 	color: white;
 }
-
+#orange {
+	background-color: #fda706;
+	border: 5px solid #fda706;
+	padding: 20px;
+	color: white;
+}
 #lime {
 	background-color: #adfb04;
 	border: 5px solid #adfb04;
